@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UserVerify</servlet-name>
+        <servlet-class>Controller.UserVerify</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerifyCode</servlet-name>
+        <servlet-class>Controller.VerifyCode</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>signupdata</servlet-name>
+        <servlet-class>Controller.signupdata</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserVerify</servlet-name>
+        <url-pattern>/UserVerify</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerifyCode</servlet-name>
+        <url-pattern>/VerifyCode</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>signupdata</servlet-name>
+        <url-pattern>/signupdata</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
